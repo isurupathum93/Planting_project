@@ -33,7 +33,7 @@ public class Planting_project extends Application {
         String result = m.DB_connection_file();
         if (result.equals("override")) {
 
-            Parent root = FXMLLoader.load(getClass().getResource("/View/SuppliarFXML.fxml"));
+            Parent root = FXMLLoader.load(getClass().getResource("/View/MainFrameFXML.fxml"));
             Scene scene = new Scene(root);
             //Image icon = new Image(getClass().getResourceAsStream("/Image/supermarket.png"));
             //stage.getIcons().add(icon);
