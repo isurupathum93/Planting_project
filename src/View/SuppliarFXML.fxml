@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.SuppliarFXMLController">
+   <top>
+      <VBox prefHeight="50.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER" prefHeight="50.0" prefWidth="800.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Image/supplier.png" />
+                     </image>
+                  </ImageView>
+                  <Label text="Supplier Management">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="5.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </top>
+   <center>
+      <TabPane prefHeight="200.0" prefWidth="200.0" side="LEFT" stylesheets="@../CSS/suppliarfxml.css" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
+        <tabs>
+          <Tab>
+               <graphic>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <ImageView fitHeight="39.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Image/new_suppliar.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </VBox>
+               </graphic>
+               <content>
+                  <BorderPane prefHeight="200.0" prefWidth="200.0">
+                     <top>
+                        <VBox prefHeight="30.0" prefWidth="725.0" BorderPane.alignment="CENTER">
+                           <children>
+                              <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #e6ffe6; -fx-background-radius: 5; -fx-border-color: #b3ffb3; -fx-border-radius: 5;">
+                                 <children>
+                                    <Label text="New Supplier">
+                                       <font>
+                                          <Font name="System Bold" size="20.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </top>
+                     <center>
+                        <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+                           <children>
+                              <HBox prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <GridPane HBox.hgrow="ALWAYS">
+                                      <columnConstraints>
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                      </columnConstraints>
+                                      <rowConstraints>
+                                        <RowConstraints maxHeight="244.0" minHeight="10.0" prefHeight="244.0" vgrow="SOMETIMES" />
+                                        <RowConstraints maxHeight="133.0" minHeight="10.0" prefHeight="35.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                      </rowConstraints>
+                                       <children>
+                                          <VBox prefHeight="200.0" prefWidth="100.0" style="-fx-border-color: #00cc99;">
+                                             <children>
+                                                <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                                                   <children>
+                                                      <Label prefHeight="17.0" prefWidth="105.0" text="Supplier Name : " />
+                                                      <TextField fx:id="sup_tx_supname" prefHeight="25.0" prefWidth="250.0" />
+                                                   </children>
+                                                   <VBox.margin>
+                                                      <Insets left="5.0" right="5.0" />
+                                                   </VBox.margin>
+                                                </HBox>
+                                                <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                                                   <children>
+                                                      <Label prefHeight="17.0" prefWidth="105.0" text="Supplier Code :" />
+                                                      <TextField fx:id="sup_tx_supcode" prefHeight="25.0" prefWidth="250.0" />
+                                                   </children>
+                                                   <VBox.margin>
+                                                      <Insets left="5.0" right="5.0" />
+                                                   </VBox.margin>
+                                                </HBox>
+                                                <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                                                   <children>
+                                                      <Label prefHeight="17.0" prefWidth="105.0" text="Contact Person : " />
+                                                      <TextField fx:id="sup_tx_person" prefHeight="25.0" prefWidth="250.0" />
+                                                   </children>
+                                                   <VBox.margin>
+                                                      <Insets left="5.0" right="5.0" />
+                                                   </VBox.margin>
+                                                </HBox>
+                                                <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                                                   <children>
+                                                      <Label prefHeight="17.0" prefWidth="105.0" text="Contact Number : " />
+                                                      <TextField fx:id="sup_tx_number" prefHeight="25.0" prefWidth="250.0" />
+                                                   </children>
+                                                   <VBox.margin>
+                                                      <Insets left="5.0" right="5.0" />
+                                                   </VBox.margin>
+                                                </HBox>
+                                                <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                                                   <children>
+                                                      <Label prefHeight="17.0" prefWidth="105.0" text="Location : " />
+                                                      <TextField fx:id="sup_tx_location" prefHeight="25.0" prefWidth="250.0" />
+                                                   </children>
+                                                   <VBox.margin>
+                                                      <Insets left="5.0" right="5.0" />
+                                                   </VBox.margin>
+                                                </HBox>
+                                                <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                                                   <children>
+                                                      <Label prefHeight="17.0" prefWidth="98.0" text="Status : " />
+                                                      <ComboBox fx:id="sup_combo_status" prefHeight="25.0" prefWidth="150.0" />
+                                                   </children>
+                                                   <VBox.margin>
+                                                      <Insets left="5.0" right="5.0" />
+                                                   </VBox.margin>
+                                                </HBox>
+                                                <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0">
+                                                   <children>
+                                                      <Button fx:id="sup_btn_save" mnemonicParsing="false" prefHeight="25.0" prefWidth="128.0" style="-fx-background-color: linear-gradient(to bottom, #80b3ff 30%, #ccf2ff 100%);" text="Register Customer">
+                                                         <HBox.margin>
+                                                            <Insets right="15.0" />
+                                                         </HBox.margin>
+                                                         <font>
+                                                            <Font name="System Bold" size="12.0" />
+                                                         </font>
+                                                      </Button>
+                                                   </children>
+                                                </HBox>
+                                             </children>
+                                             <GridPane.margin>
+                                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                             </GridPane.margin>
+                                          </VBox>
+                                       </children>
+                                    </GridPane>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </center></BorderPane>
+               </content>
+          </Tab>
+          <Tab>
+               <graphic>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <ImageView fitHeight="41.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Image/new_suppliar.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="25.0" fitWidth="19.0" pickOnBounds="true" preserveRatio="true" HBox.hgrow="ALWAYS">
+                                 <image>
+                                    <Image url="@../Image/customer_edit.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets left="-10.0" top="-30.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </graphic>
+               <content>
+                  <BorderPane prefHeight="200.0" prefWidth="200.0" />
+               </content>
+          </Tab>
+            <Tab>
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+               </content>
+               <graphic>
+                  <VBox prefHeight="200.0" prefWidth="100.0" />
+               </graphic>
+            </Tab>
+            <Tab>
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </center>
+</BorderPane>

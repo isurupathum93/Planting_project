@@ -1,0 +1,32 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+
+}
+.tab-pane *.tab-header-area *.tab-header-background {
+    -fx-background-color:transparent;
+}
+
+.tab-pane {
+    -fx-tab-min-width:100px;
+    -fx-tab-max-width:100px;
+    -fx-tab-min-height:50px;
+    -fx-tab-max-height:50px;
+}
+
+.tab {
+    -fx-font-family: Arial;
+    -fx-font-size: 18;
+    //-fx-background-color:royalblue ;
+    -fx-background-color:   linear-gradient(to bottom, #fff2e6 30%, #ffd9b3 100%);
+    //-fx-border-color : blue;
+    -fx-padding : 10 20 10 20;    
+    //-fx-
+}
+
+.tab:selected {
+    -fx-background-color:white ;
+}
+

@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1002.0" style="-fx-background-color: #e6e6e6;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.MainFXMLController">
+    <center>
+        <GridPane prefHeight="473.0" prefWidth="738.0" BorderPane.alignment="CENTER">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints maxHeight="451.0" minHeight="10.0" percentHeight="80.0" prefHeight="451.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="200.0" minHeight="10.0" percentHeight="20.0" prefHeight="82.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <GridPane GridPane.rowIndex="1">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                    <children>
+                        <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #e6e6e6; -fx-border-width: 2; -fx-border-color: #33ccff;" />
+                        <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #e6e6e6; -fx-border-width: 2; -fx-border-color: #33ccff;" GridPane.columnIndex="1" />
+                    </children>
+                </GridPane>
+            </children>
+            <BorderPane.margin>
+                <Insets left="5.0" top="2.0" />
+            </BorderPane.margin>
+        </GridPane>
+    </center>
+    <bottom>
+        <GridPane prefHeight="18.0" prefWidth="1002.0" style="-fx-background-color: #e6f9ff;" BorderPane.alignment="CENTER">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="339.0" text="© Cargills Ceylon PLC" GridPane.columnIndex="1">
+                    <font>
+                        <Font name="Arial" size="12.0" />
+                    </font>
+                </Label>
+            </children>
+        </GridPane>
+    </bottom>
+   <top>
+      <VBox prefHeight="123.0" prefWidth="1002.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox prefHeight="37.0" prefWidth="1002.0">
+               <children>
+                  <MenuBar prefHeight="25.0" prefWidth="1000.0" HBox.hgrow="ALWAYS">
+                    <menus>
+                      <Menu mnemonicParsing="false" text="File">
+                        <items>
+                          <MenuItem mnemonicParsing="false" text="Close" />
+                        </items>
+                      </Menu>
+                      <Menu mnemonicParsing="false" text="Edit">
+                        <items>
+                          <MenuItem mnemonicParsing="false" text="Delete" />
+                        </items>
+                      </Menu>
+                      <Menu mnemonicParsing="false" text="Help">
+                        <items>
+                          <MenuItem mnemonicParsing="false" text="About" />
+                        </items>
+                      </Menu>
+                    </menus>
+                  </MenuBar>
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="31.0" prefWidth="982.0" style="-fx-border-color: #66ccff; -fx-border-radius: 10; -fx-border-width: 2;" HBox.hgrow="ALWAYS">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+                     </HBox.margin>
+                     <children>
+                        <Button mnemonicParsing="false" prefHeight="46.0" prefWidth="146.0" style="-fx-background-color: transparen;">
+                           <HBox.margin>
+                              <Insets right="20.0" />
+                           </HBox.margin>
+                           <graphic>
+                              <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <ImageView fitHeight="35.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@/Image/customerblack.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label prefHeight="19.0" prefWidth="98.0" text="New Customer">
+                                       <font>
+                                          <Font name="System Bold" size="13.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                           </graphic>
+                        </Button>
+                        <Button mnemonicParsing="false" prefHeight="45.0" prefWidth="120.0" style="-fx-background-color: transparen;">
+                           <graphic>
+                              <HBox alignment="CENTER_LEFT" prefHeight="34.0" prefWidth="104.0">
+                                 <children>
+                                    <ImageView fitHeight="38.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@/Image/rportblack.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label prefHeight="17.0" prefWidth="69.0" text="Report">
+                                       <font>
+                                          <Font name="System Bold" size="13.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="95.0" prefWidth="1002.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="36.0" prefWidth="694.0" HBox.hgrow="ALWAYS" />
+                  <HBox alignment="CENTER" prefHeight="36.0" prefWidth="330.0">
+                     <children>
+                        <Pane prefHeight="38.0" prefWidth="317.0" style="-fx-background-radius: 20; -fx-background-color: linear-gradient(to bottom, #b3d9ff 30%, #3399ff 100%);">
+                           <HBox.margin>
+                              <Insets bottom="2.0" right="2.0" top="2.0" />
+                           </HBox.margin>
+                           <children>
+                              <HBox alignment="CENTER_LEFT" prefHeight="33.0" prefWidth="318.0">
+                                 <children>
+                                    <Label prefHeight="19.0" prefWidth="134.0" text="User Name">
+                                       <font>
+                                          <Font name="System Bold" size="13.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="5.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="85.0" style="-fx-background-color: transparent;">
+                                       <graphic>
+                                          <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                                             <children>
+                                                <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../Image/unknownUser.png" />
+                                                   </image>
+                                                </ImageView>
+                                                <Label prefHeight="17.0" prefWidth="45.0" text=" : Profile">
+                                                   <font>
+                                                      <Font name="System Bold" size="11.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </HBox>
+                                       </graphic>
+                                    </Button>
+                                    <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="85.0" style="-fx-background-color: transparent;">
+                                       <graphic>
+                                          <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                                             <children>
+                                                <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../Image/localblacklock.png" />
+                                                   </image>
+                                                </ImageView>
+                                                <Label text=" : Logout">
+                                                   <font>
+                                                      <Font name="System Bold" size="11.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </HBox>
+                                       </graphic>
+                                    </Button>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </Pane>
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </top>
+   <right>
+      <VBox prefHeight="459.0" prefWidth="246.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="36.0" prefWidth="246.0">
+               <children>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Image/informationI.png" />
+                     </image>
+                  </ImageView>
+                  <Label prefHeight="17.0" prefWidth="222.0" text="Label" textFill="#1d07e4">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <BorderPane prefHeight="242.0" prefWidth="246.0" style="-fx-background-color: linear-gradient(to bottom, #b3d9ff 30%, #3399ff 100%); -fx-background-radius: 10;" VBox.vgrow="ALWAYS">
+               <center>
+                  <GridPane prefHeight="221.0" prefWidth="221.0" BorderPane.alignment="CENTER">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <TableView prefHeight="200.0" prefWidth="200.0">
+                          <columns>
+                            <TableColumn prefWidth="75.0" text="C1" />
+                            <TableColumn prefWidth="75.0" text="C2" />
+                          </columns>
+                        </TableView>
+                     </children>
+                     <BorderPane.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </BorderPane.margin>
+                  </GridPane>
+               </center>
+            </BorderPane>
+            <Pane prefHeight="172.0" prefWidth="246.0" style="-fx-background-color: linear-gradient(to bottom, #ffffff 30%, #ccf2ff 100%); -fx-border-color: #33ccff; -fx-border-radius: 2; -fx-background-radius: 10; -fx-border-radius: 10;">
+               <VBox.margin>
+                  <Insets right="2.0" top="5.0" />
+               </VBox.margin>
+            </Pane>
+         </children>
+      </VBox>
+   </right>
+</BorderPane>

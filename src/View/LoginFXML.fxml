@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="234.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.LoginFXMLController">
+    <stylesheets>
+        <URL value="@/CSS/loginfxml.css" />
+    </stylesheets>
+   <children>
+      <ImageView fitHeight="243.0" fitWidth="610.0" layoutX="-2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@/Image/Record-keeping-with-farm-management-software-.jpg" />
+         </image>
+      </ImageView>
+      <Pane layoutX="342.0" layoutY="98.0" prefHeight="127.0" prefWidth="245.0" style="-fx-background-radius: 10; -fx-background-color: rgba(0, 100, 100, 0.5); -fx-background-radius: 10;;" />
+      <TextField fx:id="Tx_login_username" layoutX="352.0" layoutY="108.0" prefHeight="25.0" prefWidth="224.0" style="-fx-background-color: tratransparentnsparent; -fx-border-width: 2; -fx-border-color: blue; -fx-border-radius: 5;" />
+      <TextField fx:id="tx_login_password" layoutX="352.0" layoutY="150.0" prefHeight="25.0" prefWidth="224.0" style="-fx-background-color: transparent; -fx-border-color: blue; -fx-border-radius: 5; -fx-border-width: 2;" />
+      <Button fx:id="btn_Login_Login" layoutX="520.0" layoutY="187.0" mnemonicParsing="false" style="-fx-background-color: linear-gradient(to bottom, #ccffff 30%, #66d9ff 100%); -fx-border-color: green; -fx-border-radius: 5;" text="LOGIN">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

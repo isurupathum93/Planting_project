@@ -1,0 +1,64 @@
+/*
+ * Empty Stylesheet file.
+ */
+/*
+.table-view .column-header,
+.table-view .column-header .filler,
+.table-view .column-header-background .filler {
+    -fx-background-color: white;
+
+}
+.table-view.column-header{
+    -fx-border-color: red;
+    -fx-border-width:2;
+}
+*/
+/*
+.table-view{
+    -fx-background-color: transparent;
+}
+
+.table-view:focused{
+    -fx-background-color: transparent;
+}
+*/
+.button:pressed {
+    -fx-background-color: linear-gradient(#ff5400, #be1d00);
+}
+
+.table-view .column-header-background{
+    -fx-background-color: white;
+}
+
+.table-view .column-header-background .label{
+    /* -fx-background-color: transparent;
+     -fx-text-fill: #0ed9e0;*/
+}
+
+.table-view .column-header {
+    -fx-background-color: white;
+    -fx-border-color:black;
+}
+
+.table-view .table-cell{
+    -fx-text-fill: #0ed9e0;
+    -fx-alignment: center;
+}
+
+.table-row-cell{
+    -fx-background-color: -fx-table-cell-border-color, #2b2a2a;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em; /* 0 */
+}
+
+.table-row-cell:odd{
+    -fx-background-color: -fx-table-cell-border-color, #262626;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em; /* 0 */
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #005797;
+    -fx-background-insets: 0;
+    -fx-background-radius: 1;
+}

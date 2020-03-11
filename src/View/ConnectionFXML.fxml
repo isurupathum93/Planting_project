@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="354.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ConnectionFXMLController">
+    <stylesheets>
+        <URL value="@CSS/connectionfxml.css" />
+    </stylesheets>
+    <children>
+        <BorderPane prefHeight="400.0" prefWidth="354.0">
+            <top>
+                <Label alignment="CENTER" prefHeight="17.0" prefWidth="248.0" text="Setup Connection" BorderPane.alignment="CENTER">
+                    <font>
+                        <Font name="System Bold" size="15.0" />
+                    </font>
+                </Label>
+            </top>
+            <padding>
+                <Insets top="10.0" />
+            </padding>
+            <center>
+                <GridPane prefHeight="341.0" prefWidth="354.0" BorderPane.alignment="CENTER">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="172.0" minWidth="10.0" prefWidth="148.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="206.0" minWidth="10.0" prefWidth="206.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints maxHeight="116.0" minHeight="10.0" prefHeight="46.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="116.0" minHeight="5.0" prefHeight="43.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="116.0" minHeight="0.0" prefHeight="47.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="246.0" minHeight="10.0" prefHeight="44.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="298.0" minHeight="10.0" prefHeight="47.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="298.0" minHeight="10.0" prefHeight="47.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="298.0" minHeight="10.0" prefHeight="106.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                    <children>
+                        <Label prefHeight="17.0" prefWidth="132.0" text="DataBase">
+                            <font>
+                                <Font name="System Bold" size="13.0" />
+                            </font>
+                        </Label>
+                        <ComboBox fx:id="combo_Connect_type" prefHeight="32.0" prefWidth="196.0" GridPane.columnIndex="1" />
+                        <Label prefHeight="17.0" prefWidth="137.0" text="Host" GridPane.rowIndex="1">
+                            <font>
+                                <Font name="System Bold" size="13.0" />
+                            </font>
+                        </Label>
+                        <Label text="DataBase Name" GridPane.rowIndex="2">
+                            <font>
+                                <Font name="System Bold" size="13.0" />
+                            </font>
+                        </Label>
+                        <Label prefHeight="17.0" prefWidth="103.0" text="DB user" GridPane.rowIndex="3">
+                            <font>
+                                <Font name="System Bold" size="13.0" />
+                            </font>
+                        </Label>
+                        <Label prefHeight="17.0" prefWidth="141.0" text="DB Password" GridPane.rowIndex="4">
+                            <font>
+                                <Font name="System Bold" size="13.0" />
+                            </font>
+                        </Label>
+                        <TextField fx:id="txt_Connect_host" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                            <font>
+                                <Font name="System Bold" size="13.0" />
+                            </font>
+                        </TextField>
+                        <TextField fx:id="txt_Connect_dbname" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                            <font>
+                                <Font name="System Bold" size="13.0" />
+                            </font>
+                        </TextField>
+                        <TextField fx:id="txt_Connect_user" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                            <font>
+                                <Font name="System Bold" size="13.0" />
+                            </font>
+                        </TextField>
+                        <TextField fx:id="txt_Connect_password" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                            <font>
+                                <Font name="System Bold" size="13.0" />
+                            </font>
+                        </TextField>
+                        <Button fx:id="btn_Connect_test" mnemonicParsing="false" prefHeight="25.0" prefWidth="132.0" GridPane.rowIndex="6">
+                            <graphic>
+                                <HBox prefHeight="19.0" prefWidth="116.0">
+                                    <children>
+                                        <ImageView fitHeight="23.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../Image/testConnection.png" />
+                                            </image>
+                                        </ImageView>
+                                        <Label prefHeight="17.0" prefWidth="93.0" text="test Connect">
+                                            <font>
+                                                <Font name="System Bold" size="13.0" />
+                                            </font>
+                                        </Label>
+                                    </children>
+                                </HBox>
+                            </graphic>
+                        </Button>
+                        <Button fx:id="btn_Connect_save" mnemonicParsing="false" prefHeight="31.0" prefWidth="157.0" GridPane.columnIndex="1" GridPane.rowIndex="6">
+                            <graphic>
+                                <HBox prefHeight="23.0" prefWidth="130.0">
+                                    <children>
+                                        <ImageView fitHeight="23.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../Image/SaveConnection.png" />
+                                            </image>
+                                        </ImageView>
+                                        <Label prefHeight="19.0" prefWidth="114.0" text="Save Connection">
+                                            <font>
+                                                <Font name="System Bold" size="13.0" />
+                                            </font>
+                                        </Label>
+                                    </children>
+                                </HBox>
+                            </graphic>
+                        </Button>
+                  <Label prefHeight="17.0" prefWidth="141.0" text="Port" GridPane.rowIndex="5">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txt_Connect_port" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </TextField>
+                    </children>
+                    <BorderPane.margin>
+                        <Insets top="10.0" />
+                    </BorderPane.margin>
+                    <padding>
+                        <Insets left="10.0" right="10.0" />
+                    </padding>
+                </GridPane>
+            </center>
+        </BorderPane>
+    </children>
+</AnchorPane>

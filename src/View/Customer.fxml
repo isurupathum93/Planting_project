@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.CustomerController">
+<stylesheets>
+        <URL value="@CSS/customer.css" />
+    </stylesheets>  
+    <center>
+       
+      <TabPane prefHeight="200.0" prefWidth="200.0" side="LEFT" stylesheets="@../CSS/customer.css" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
+        <tabs>
+          <Tab>
+               <content>
+                  <BorderPane prefHeight="200.0" prefWidth="200.0">
+                     <center>
+                        <GridPane style="-fx-background-color: linear-gradient(to bottom, #ffffff 30%, #ccf2ff 100%);" BorderPane.alignment="CENTER">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <VBox alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="100.0">
+                                 <children>
+                                    <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                                       <children>
+                                          <Label prefHeight="17.0" prefWidth="114.0" text="Customer Number : ">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField fx:id="cus_tx_number" editable="false" prefHeight="25.0" prefWidth="195.0" style="-fx-border-color: blue; -fx-background-radius: 5; -fx-border-radius: 5;" />
+                                          <Label prefHeight="45.0" prefWidth="68.0" text="Auto Genarated">
+                                             <font>
+                                                <Font name="System Italic" size="9.0" />
+                                             </font>
+                                             <HBox.margin>
+                                                <Insets left="5.0" />
+                                             </HBox.margin>
+                                          </Label>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets left="5.0" />
+                                       </VBox.margin>
+                                    </HBox>
+                                    <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                                       <children>
+                                          <Label prefHeight="17.0" prefWidth="84.0" text="First Name :">
+                                             <HBox.margin>
+                                                <Insets left="5.0" />
+                                             </HBox.margin>
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField fx:id="cus_tx_fisrtname" prefHeight="27.0" prefWidth="227.0" style="-fx-background-radius: 5; -fx-border-color: blue; -fx-border-radius: 5;" />
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                              <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1">
+                                 <children>
+                                    <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" />
+                                    <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                                       <children>
+                                          <Label prefHeight="17.0" prefWidth="79.0" text="Last Name : ">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField fx:id="cus_tx_lastname" prefHeight="25.0" prefWidth="239.0" style="-fx-background-radius: 5; -fx-border-color: blue; -fx-border-radius: 5;" />
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                              <HBox prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="1">
+                                 <children>
+                                    <Label prefHeight="17.0" prefWidth="84.0" text="Address : ">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="5.0" top="5.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <TextArea fx:id="cus_tx_address" prefHeight="98.0" prefWidth="229.0" style="-fx-background-radius: 5; -fx-border-color: blue; -fx-border-radius: 5;">
+                                       <HBox.margin>
+                                          <Insets top="5.0" />
+                                       </HBox.margin>
+                                    </TextArea>
+                                 </children>
+                              </HBox>
+                              <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                 <children>
+                                    <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                                       <children>
+                                          <Label prefHeight="17.0" prefWidth="105.0" text="Contact Number : ">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField fx:id="cus_tx_contact" prefHeight="25.0" prefWidth="213.0" style="-fx-background-radius: 5; -fx-border-color: blue; -fx-border-radius: 5;" />
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                                       <children>
+                                          <Label prefHeight="17.0" prefWidth="106.0" text="Email : ">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField fx:id="cus_tx_email" prefHeight="25.0" prefWidth="210.0" style="-fx-background-radius: 5; -fx-border-color: blue; -fx-border-radius: 5;" />
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                              <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                 <children>
+                                    <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                                       <children>
+                                          <Label prefHeight="17.0" prefWidth="105.0" text="Remark :">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <TextArea fx:id="cus_tx_remark" prefHeight="49.0" prefWidth="213.0" style="-fx-background-radius: 5; -fx-border-color: blue; -fx-border-radius: 5;" />
+                                       </children>
+                                    </HBox>
+                                    <HBox prefHeight="39.0" prefWidth="388.0" />
+                                 </children>
+                              </VBox>
+                              <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                                 <children>
+                                    <Button fx:id="cus_btn_save" mnemonicParsing="false" prefHeight="25.0" prefWidth="134.0" style="-fx-background-color: linear-gradient(to bottom, #80b3ff 30%, #ccf2ff 100%); -fx-background-radius: 10; -fx-border-color: linear-gradient(#eaf6fd 0%, #d9f0fc 49%, #bee6fd 50%, #a7d9f5 100%); -fx-border-radius: 10;" text="Save">
+                                       <HBox.margin>
+                                          <Insets right="70.0" top="-50.0" />
+                                       </HBox.margin>
+                                       <font>
+                                          <Font name="System Bold" size="14.0" />
+                                       </font>
+                                    </Button>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </GridPane>
+                     </center>
+                     <top>
+                        <HBox alignment="CENTER" prefHeight="30.0" prefWidth="741.0" style="-fx-background-color: #e6ffe6; -fx-background-radius: 5; -fx-border-color: #b3ffb3; -fx-border-radius: 5;" BorderPane.alignment="CENTER">
+                           <children>
+                              <Label text="New Customer">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                     </top>
+                  </BorderPane>
+               </content>
+               <graphic>
+                  <VBox alignment="CENTER" prefHeight="45.0" prefWidth="154.0">
+                     <children>
+                        <ImageView fitHeight="27.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Image/new_customer_register.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </VBox>
+               </graphic>
+          </Tab>
+          <Tab>
+               <graphic>
+                  <VBox alignment="CENTER" prefHeight="61.0" prefWidth="101.0">
+                     <children>
+                        <ImageView fitHeight="31.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Image/customer_history.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </VBox>
+               </graphic>
+               <content>
+                  <BorderPane prefHeight="200.0" prefWidth="200.0">
+                     <top>
+                        <HBox alignment="CENTER" prefHeight="30.0" prefWidth="200.0" style="-fx-background-color: #e6ffe6; -fx-border-color: #b3ffb3; -fx-background-radius: 5; -fx-border-radius: 5;" BorderPane.alignment="CENTER">
+                           <children>
+                              <Label text="Customer's Sales History">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                     </top>
+                  </BorderPane>
+               </content>
+          </Tab>
+            <Tab>
+               <graphic>
+                  <VBox alignment="CENTER" prefHeight="16.0" prefWidth="100.0">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="23.0" prefWidth="100.0">
+                           <children>
+                              <ImageView fitHeight="31.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Image/Customer_register-icon.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Image/customer_edit.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" />
+                     </children>
+                  </VBox>
+               </graphic>
+               <content>
+                  <BorderPane prefHeight="200.0" prefWidth="200.0">
+                     <top>
+                        <HBox alignment="CENTER" prefHeight="30.0" prefWidth="200.0" style="-fx-background-color: #e6ffe6; -fx-background-radius: 5; -fx-border-color: #b3ffb3; -fx-border-radius: 5;" BorderPane.alignment="CENTER">
+                           <children>
+                              <Label text="Edit Customer Details">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                     </top>
+                  </BorderPane>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </center>
+   <top>
+      <VBox prefHeight="48.0" prefWidth="776.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                     <image>
+                        <Image url="@../Image/customer_276528.png" />
+                     </image>
+                  </ImageView>
+                  <Label prefHeight="24.0" prefWidth="215.0" text="Customers Managment">
+                     <font>
+                        <Font name="Cambria Bold" size="20.0" />
+                     </font></Label>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </top>
+</BorderPane>
